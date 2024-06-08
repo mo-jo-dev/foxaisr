@@ -55,7 +55,6 @@ nav>ul>li>a::after{
     content: '';
     width: 0;
     height: 3px;
-    /* background:#ff004f; */
     background: darkorange;
     position: absolute;
     left: 0;
@@ -213,6 +212,8 @@ nav>ul>li>a:hover::after{
 #portfolio{
     margin:50px 0;
 }
+
+/* <!-- Task 1 Foxaisr by Mohit Joshi --> */
 
 #mywork{
     transition: transform 0.5s;
@@ -377,3 +378,5 @@ footer>p>i{
     font-weight:70;
     color: #3b3b3b;
 }
+
+/* <!-- Task 1 Foxaisr by Mohit Joshi --> */
