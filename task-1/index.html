@@ -151,7 +151,7 @@
                     <h1 class="sub-title">Contace Me</h1>
                     <p style="color: #ababab;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea odit exercitationem vitae iste quae modi? Laudantium quibusdam, quos <br>ipsum odit natus sapiente harum commodi officia, dolore labore culpa, fuga sunt.</p>
                 </div>
-                <div style="display: flex; justify-content:space-around; align-items: center; background-color: goldenrod; border-radius: 10px; margin-top: 35px; padding: 30px;">
+                <div style="display: flex; flex-wrap: wrap; justify-content:space-around; align-items: center; background-color: goldenrod; border-radius: 10px; margin-top: 35px; padding: 30px;">
                     <div><h1 style="color: white;">Say, Hello</h1></div>
                     <div><p style="font-size:x-large; color: white;">email@company.com</p></div>
                     <div><a href="#" class="btn btn2" style="color: goldenrod; background-color: white;">Say, Hello</a></div>
@@ -162,9 +162,9 @@
 
     <!-- ----------------footer------------------- -->
     <footer style="background-color: white;" class="container">
-        <div style="display: flex; justify-content:space-between; align-items: center; margin-top:7%">
+        <div style="display: flex; flex-wrap: wrap; justify-content:space-between; align-items: center; margin-top:7%">
             <div>
-                <h1>LETS TALK</h1>
+                <h1 style="margin-top: 5px; ">LETS TALK</h1>
                 <br>
                 <p>
                     <li style="list-style: none; padding-top: 5px; color: #ababab;">Address: Lorem ipsum dolor sit amet</li>
@@ -174,7 +174,7 @@
                 </p>
             </div>
             <div>
-                <h1>INFO</h1>
+                <h1 style="margin-top: 5px; ">INFO</h1>
                 <br>
                 <p>
                     <li style="list-style: none; padding-top: 5px; color: #ababab;">Loremaad </li>
@@ -184,7 +184,7 @@
                 </p>
             </div>
             <div>
-                <h1>WHY ME?</h1>
+                <h1 style="margin-top: 5px; ">WHY ME?</h1>
                 <br>
                 <p>
                     <li style="list-style: none; padding-top: 5px; color: #ababab;">Lorem ipsum dolor sit</li>
@@ -203,5 +203,31 @@
         <div><p style="color: #ababab;">2024 - Designk. All Rights Reserved</p></div>
     </div>
     <!-- Task 1 Foxaisr by Mohit Joshi -->
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+        function display(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var hambrgr = document.getElementById('sidemenu');
+
+        function openmenu() {
+            hambrgr.style.right = "0";
+        }
+
+        function closemenu() {
+            hambrgr.style.right = "-200px";
+        }
+    </script>
 </body>
 </html>
